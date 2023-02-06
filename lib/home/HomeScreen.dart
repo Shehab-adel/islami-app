@@ -76,8 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> views = [
     QuranTab(),
-    HadethTab(),
-    TasbehTab(),
+    const HadethTab(),
+    const TasbehTab(),
     const RadioTab(),
     const SettingsTab(),
   ];

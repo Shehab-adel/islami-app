@@ -6,6 +6,8 @@ import 'VerseWidget.dart';
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = 'sura-details';
 
+  const SuraDetailsScreen({Key? key}) : super(key: key);
+
   @override
   State<SuraDetailsScreen> createState() => _SuraDetailsScreenState();
 }

@@ -3,7 +3,7 @@ import 'package:islami_online_c4/main.dart';
 import '../../model/radio_response.dart';
 
 class RadioItem extends StatefulWidget {
-  RadioItem({
+  const RadioItem({
     Key? key,
     required this.item,
     required this.play,

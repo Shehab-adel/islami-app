@@ -3,6 +3,8 @@ import 'dart:math' as math;
 import '../../main.dart';
 
 class TasbehTab extends StatefulWidget {
+  const TasbehTab({Key? key}) : super(key: key);
+
   @override
   State<TasbehTab> createState() => _TasbehTabState();
 }

@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../main.dart';
 import 'SuraNameWidget.dart';
 
+// ignore: must_be_immutable
 class QuranTab extends StatelessWidget {
   late AppConfigProvider provider;
 

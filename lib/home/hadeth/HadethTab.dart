@@ -6,6 +6,8 @@ import '../../providers/AppConfigProvider.dart';
 import 'HadethNameWidget.dart';
 
 class HadethTab extends StatefulWidget {
+  const HadethTab({Key? key}) : super(key: key);
+
   @override
   State<HadethTab> createState() => _HadethTabState();
 }
@@ -14,7 +16,7 @@ class _HadethTabState extends State<HadethTab> {
   late AppConfigProvider provider;
   @override
   Widget build(BuildContext context) {
-    provider=Provider.of<AppConfigProvider>(context);
+    provider = Provider.of<AppConfigProvider>(context);
     if (allHadethItems.isEmpty) loadHadethFile();
     return Column(
       children: [
@@ -31,11 +33,12 @@ class _HadethTabState extends State<HadethTab> {
                   itemCount: allHadethItems.length,
                   separatorBuilder: (buildContext, index) {
                     return Container(
-                        height: 2,
-                        color: provider.isDarkMode
-                        ? MyThemeData.accentColorDark
-                        : MyThemeData.primaryColor,
-                    margin: EdgeInsets.symmetric(horizontal: 24),);
+                      height: 2,
+                      color: provider.isDarkMode
+                          ? MyThemeData.accentColorDark
+                          : MyThemeData.primaryColor,
+                      margin: EdgeInsets.symmetric(horizontal: 24),
+                    );
                   },
                 ),
         )
@@ -63,7 +66,6 @@ class _HadethTabState extends State<HadethTab> {
     }
     allHadethItems = allHadethData;
     setState(() {});
-
   }
 }
 

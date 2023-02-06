@@ -3,13 +3,17 @@ import 'package:islami_online_c4/providers/AppConfigProvider.dart';
 import 'package:islami_online_c4/utils.dart';
 import 'package:provider/provider.dart';
 
+// ignore: must_be_immutable
 class LanguageBottomSheet extends StatelessWidget {
   late AppConfigProvider provider;
+
+  LanguageBottomSheet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     provider = Provider.of<AppConfigProvider>(context);
     return Container(
+      color: provider.isDarkMode ? Colors.black26 : Colors.white,
       child: Column(
         children: [
           InkWell(
@@ -30,13 +34,12 @@ class LanguageBottomSheet extends StatelessWidget {
           ),
         ],
       ),
-      color: provider.isDarkMode ? Colors.black26 : Colors.white,
     );
   }
 
   Widget getSelectedItemWidget(String text, BuildContext context) {
     return selectedAndUnSelectedPadding(text, context,
-        widget: Icon(
+        widget: const Icon(
           Icons.check,
         ));
   }

@@ -62,7 +62,6 @@ class _RadioTabState extends State<RadioTab> {
               ],
             );
           } else if (snapshot.hasError) {
-            print("***************${snapshot.toString()}");
             return Center(
               child: IconButton(
                 onPressed: () {

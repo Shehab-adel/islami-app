@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/AppConfigProvider.dart';
 
+// ignore: must_be_immutable
 class VerseWidget extends StatelessWidget {
   String text;
   int index;
   late AppConfigProvider provider;
-  VerseWidget(this.text, this.index);
+  VerseWidget(this.text, this.index, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class VerseWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Text(
-        text + ' {${index + 1}}',
+        '$text {${index + 1}}',
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 30,

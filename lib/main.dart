@@ -21,9 +21,9 @@ class MyThemeData {
   static const Color accentColorDark = Color.fromARGB(255, 250, 204, 29);
   static final ThemeData lightTheme = ThemeData(
       primaryTextTheme: const TextTheme(
-        headline1: TextStyle(color: Colors.black),
-        headline2: TextStyle(color: Colors.black, fontSize: 24),
-        headline3: TextStyle(color: Colors.black),
+        displayLarge: TextStyle(color: Colors.black),
+        displayMedium: TextStyle(color: Colors.black, fontSize: 24),
+        displaySmall: TextStyle(color: Colors.black),
       ),
       scaffoldBackgroundColor: Colors.transparent,
       primaryColor: MyThemeData.primaryColor,
@@ -38,9 +38,9 @@ class MyThemeData {
           selectedItemColor: Colors.black, unselectedItemColor: Colors.white));
   static final ThemeData darkTheme = ThemeData(
       primaryTextTheme: const TextTheme(
-        headline1: TextStyle(color: Colors.white),
-        headline2: TextStyle(color: Colors.white, fontSize: 24),
-        headline3: TextStyle(color: Colors.white),
+        displayLarge: TextStyle(color: Colors.white),
+        displayMedium: TextStyle(color: Colors.white, fontSize: 24),
+        displaySmall: TextStyle(color: Colors.white),
       ),
       scaffoldBackgroundColor: Colors.transparent,
       primaryColor: MyThemeData.primaryColorDark,
