@@ -77,7 +77,7 @@ class MainApplication extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (buildContext) => HomeScreen(),
         HadethDetailsScreen.routeName: (buildContext) => HadethDetailsScreen(),
-        SuraDetailsScreen.routeName: (buildContext) => SuraDetailsScreen(),
+        SuraDetailsScreen.routeName: (buildContext) => const SuraDetailsScreen(),
       },
       initialRoute: HomeScreen.routeName,
     );

@@ -22,6 +22,11 @@ class _RadioTabState extends State<RadioTab> {
     radioResponse = DataResponse.fetchRadio();
     audioPlayer = AudioPlayer();
   }
+  @override
+  void dispose() {
+   audioPlayer.stop();
+    super.dispose();
+  }
 
   play(String url) async {
     await audioPlayer.play(url);
