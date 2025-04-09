@@ -1,16 +1,29 @@
-# islami
+# 📰 Islami App (Flutter)
 
-A new Flutter project.
+An Islamic app built using Flutter that provides users with various Islamic content such as prayer times and more.
 
-## Getting Started
+## 🚀 Features
+This app contains five screens.
+- Quran and Ahades.
+- tasbeh screen that have rotate sebha.
+- radio screen that have audio 
+radio.
+- settings screen that have theme mode of 
+app.
+- Responsive and user-friendly UI
+- Dark and Light theme support
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack
+- Flutter
+- HTTP package
+- Provider (State Management)
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
+(Add 2-3 screenshots here, for example from emulator or real device)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Installation
+```bash
+git clone https://github.com/Shehab-adel/islami-app
+cd islami-app
+flutter pub get
+flutter run
